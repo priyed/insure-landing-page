@@ -1,0 +1,557 @@
+@import url("https://fonts.googleapis.com/css?family=Karla&display=swap");
+@import url("https://fonts.googleapis.com/css?family=DM+Serif+Display&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Karla;
+  margin: auto;
+}
+/*=========================
+    Navigation/header styling
+======================*/
+.logo {
+  margin: 20px 20px;
+}
+
+.topnav {
+  overflow: hidden;
+  position: relative;
+}
+
+#myLinks {
+  display: none;
+  text-align: center;
+  background-color: hsl(270, 9%, 17%);
+  width: 100%;
+}
+
+#myLinks a {
+  padding: 14px 24px;
+  margin: auto;
+  width: 50%;
+  color: hsl(0, 0%, 98%);
+  text-decoration: none;
+  width: 85%;
+  font-size: 20px;
+  font-weight: 500;
+  display: block;
+}
+
+#myLinks img {
+  width: 100%;
+  margin-top: auto;
+  margin-bottom: -50px;
+}
+
+#myLinks a:hover {
+  border: 1.5px solid hsl(0, 0%, 98%);
+}
+
+.topnav .icon {
+  display: block;
+  position: absolute;
+  right: 8px;
+  top: 0;
+}
+
+.menu-bar-container {
+  display: inline-block;
+  cursor: pointer;
+  padding: 4px 8px 4px 10px;
+  position: absolute;
+  right: 5px;
+  top: 9px;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 22px;
+  height: 3px;
+  background-color: hsl(270, 9%, 17%);
+  margin: 6px 2px 4px 4px;
+  transition: 0.3s;
+}
+
+.change .bar1 {
+  transform: rotate(-45deg) translate(-4px, 4px);
+  transform: rotate(-45deg) translate(-4px, 2px);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  transform: rotate(45deg) translate(-8px, -2px);
+  transform: rotate(45deg) translate(-8px, -6px);
+}
+
+/*=================
+   Start Hero Section styling
+=================*/
+.hero-container {
+  text-align: center;
+  margin: auto;
+}
+#desktop-image {
+  display: none;
+}
+#mobile-image {
+  width: 100%;
+}
+
+.article {
+  background-color: hsl(270, 9%, 17%);
+  position: relative;
+  margin-top: -5px;
+  height: 550px;
+}
+
+#bg-left-mobile {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+#bg-right-mobile {
+  position: absolute;
+  right: 0;
+  top: 400px;
+}
+
+#bg-left-desktop {
+  display: none;
+}
+
+#bg-right-desktop {
+  display: none;
+}
+.hero-pitch {
+  color: hsl(0, 0%, 98%);
+  position: absolute;
+  top: 100px;
+  margin: 0 50px;
+}
+
+.hero-pitch h2 {
+  font-size: 53px;
+  line-height: 53px;
+}
+
+.hero-pitch p {
+  margin: 20px 4px;
+  font-size: 15px;
+  line-height: 30px;
+  margin-bottom: 50px;
+}
+
+.hero-pitch a {
+  text-decoration: none;
+  border: 1px solid white;
+  color: hsl(0, 0%, 98%);
+  padding: 10px 25px;
+  transition: 0.5s;
+  z-index: 20;
+}
+
+.hero-pitch a:hover {
+  color: #333;
+  font-size: 20px;
+  background: hsl(0, 0%, 98%);
+  padding: 17px 35px;
+}
+/*=================
+    End Hero Section styling
+=================*/
+/*==================
+  Start  Features Styling
+====================*/
+.features-container {
+  text-align: center;
+  margin: 100px 50px;
+}
+
+.line {
+  width: 150px;
+  height: 1px;
+  background-color: hsl(216, 30%, 68%);
+  margin: 150px auto 40px;
+}
+
+.features-container h2 {
+  font-size: 44px;
+  margin-bottom: 60px;
+}
+
+.features img {
+  width: 70px;
+  margin-bottom: 25px;
+}
+
+.features h3 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.features p {
+  margin-bottom: 60px;
+}
+
+/* 
+========================
+End Features styling
+========================
+*/
+
+/* 
+========================
+Start How-we_work styling
+========================
+*/
+.how-we-work {
+  text-align: center;
+  background-color: #333;
+  margin: 30px;
+  color: hsl(0, 0%, 98%);
+  position: relative;
+  height: 370px;
+}
+
+.how-we-work #how-bg-mobile {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#how-bg-desktop {
+  display: none;
+}
+
+.how-we-work h3 {
+  font-size: 40px;
+  margin: 40px;
+  position: relative;
+  top: 50px;
+}
+
+.how-we-work a {
+  text-decoration: none;
+  border: 1px solid white;
+  color: hsl(0, 0%, 98%);
+  padding: 10px 25px;
+  transition: 0.5s;
+  z-index: 20;
+  position: relative;
+  top: 90px;
+}
+
+.how-we-work a:hover {
+  color: #333;
+  font-size: 20px;
+  background: hsl(0, 0%, 98%);
+  padding: 17px 35px;
+}
+/* 
+========================
+End How-we-work styling
+========================
+*/
+
+/* 
+========================
+Start Insure LInks styling
+========================
+*/
+.insure-contacts {
+  position: relative;
+  text-align: center;
+  background-color: hsl(0, 0%, 98%);
+  margin-top: 100px;
+  z-index: 10;
+}
+
+.insure-contacts .contacts-bg {
+  position: absolute;
+  width: 400px;
+  top: 0;
+  left: 0;
+}
+
+.insure-contacts #logo2 {
+  margin: 115px auto 20px;
+  z-index: 20;
+}
+
+.social-media-links img {
+  margin: 20px 10px;
+}
+
+#logo2,
+.line-2,
+.social-media-links {
+  z-index: 20;
+}
+
+.line-2 {
+  width: 80%;
+  height: 1px;
+  background-color: hsl(216, 30%, 68%);
+  margin: 50px auto;
+}
+
+.all-links a {
+  display: block;
+  text-decoration: none;
+  margin: 10px;
+  color: hsl(270, 9%, 17%);
+  font-weight: 600;
+  transition: all 0.4s;
+}
+
+
+
+.company,
+.help,
+.others,
+.contact {
+  margin-bottom: 50px;
+}
+
+.all-links h4 {
+  margin-bottom: 30px;
+  color: hsl(273, 4%, 51%);
+  font-weight: 500;
+}
+
+/* 
+========================
+End Insure LInks styling
+========================
+*/
+
+/*
+========================
+Start Media queries
+========================
+*/
+@media only screen and (min-width: 1220px) {
+  .main-container {
+    width: 90%;
+    position: relative;
+    margin: auto;
+  }
+
+  .topnav {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+  }
+
+  .logo {
+    margin: 30px 0 0px 70px;
+    display: inline-block;
+    height: 20px;
+  }
+
+  .topnav #myLinks {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: inherit;
+    width: auto;
+    height: auto;
+    margin-right: 50px;
+    position: absolute;
+    right: 10px;
+    top: 20px;
+  }
+
+  #myLinks a {
+    color: hsl(270, 9%, 17%);
+    font-size: 15px;
+    font-weight: 500;
+    width: auto;
+    float: right;
+  }
+
+  #myLinks img {
+    display: none;
+  }
+
+  #myLinks a:hover {
+    border: 1.5px solid hsl(270, 9%, 17%);
+    background-color: hsl(270, 9%, 17%);
+    color: hsl(0, 0%, 98%);
+  }
+
+  .topnav .icon {
+    display: none;
+  }
+
+  .hero-container {
+    text-align: center;
+  }
+  #desktop-image {
+    display: block;
+    position: absolute;
+    width: 450px;
+    right: 70px;
+    top: 130px;
+    z-index: 2;
+  }
+  #mobile-image {
+    display: none;
+  }
+
+  .article {
+    position: relative;
+    z-index: 1;
+  }
+
+  .hero-pitch {
+    text-align: left;
+    margin-top: -70px;
+  }
+
+  .line-d {
+    width: 150px;
+    height: 0.5px;
+    background-color: hsl(0, 1%, 70%);
+    margin-left: 70px;
+    margin-top: 50px;
+  }
+  .hero-pitch h2 {
+    margin: 30px 750px 20px 70px;
+  }
+
+  .main-container p {
+    margin: 40px 600px 20px 70px;
+    margin-bottom: 50px;
+  }
+
+  .hero-pitch a {
+    margin-left: 70px;
+  }
+
+  #bg-left-mobile {
+    display: none;
+  }
+
+  #bg-right-mobile {
+    display: none;
+  }
+
+  #bg-left-desktop {
+    display: block;
+    position: absolute;
+    top: 370px;
+  }
+
+  #bg-right-desktop {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 30;
+  }
+
+  .features-container {
+    text-align: left;
+    margin-top: 70px;
+  }
+
+  .line {
+    margin-left: 70px;
+    
+  }
+
+  .features-container h2 {
+    margin-left: 70px;
+
+  }
+
+  .features {
+    display: flex;
+
+  }
+  .features img {
+    margin-left: 70px;
+
+  }
+
+  .features h3 {
+    margin-left: 70px;
+  }
+
+  .features p {
+    margin: 10px 35px 100px 70px;
+  }
+
+  .how-we-work {
+    text-align: left;
+    position: relative;
+    height: 252px;
+  }
+  
+  .how-we-work #how-bg-mobile {
+    display: none;
+  }
+
+  #how-bg-desktop {
+    display: block;
+    position: absolute;
+    right: 0;
+  }
+  
+  .how-we-work h3 {
+    margin: 40px 755px 40px 70px;
+    position: relative;
+    top: 50px;
+  }
+  
+  .how-we-work a {
+   
+    position: absolute;
+    right: 90px;
+    top: 100px;
+  }
+  
+  .insure-contacts {
+    width: 100%;
+  }
+  
+  .socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  .socials #logo2 {
+    position: absolute;
+    left: 70px;
+  }
+
+  .social-media-links {
+    position: absolute;
+    right: 45px;
+    top: 90px;
+  }
+  .line-2 {
+     margin-top: 170px;
+     width: 90%;
+  }
+
+  .all-links {
+    display: flex;
+    text-align:  left;
+    justify-content: space-evenly;
+  }
+
+}
